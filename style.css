@@ -152,9 +152,8 @@ border-radius: 50px;
 
 }
 .line p,#about p{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #666;
-     
     line-height: 1.7;
     margin-bottom: 1rem;
 }
@@ -284,6 +283,7 @@ a.btn--med:hover{
     padding-top: 50px;
     height: 100vh;
     background-color: #FAFAFA;
+    margin-bottom: 50px;
 }
 
  
@@ -335,6 +335,7 @@ h1.title{
 }
 #section-4{
     padding: 0;
+    padding-top: 50px;
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -381,5 +382,14 @@ h1.title{
 .icon{
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.myskill{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
 }
  
