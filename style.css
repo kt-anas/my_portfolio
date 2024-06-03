@@ -71,6 +71,7 @@ nav.navbar{
     text-decoration: underline;
     color: #7843E9;
 }
+
 .name{
     font-family: "General Sans  SemiBold";
     
@@ -144,7 +145,7 @@ border-radius: 50px;
     transition: transform .3s;
  }
  #btn-a:hover {
-    transform: translateY(-3px)
+    transform: translateY(5px)
 
 }
 #section-1{
@@ -316,6 +317,15 @@ a.btn--med:hover{
     align-items: flex-start;
     padding-right: 200px;
 }
+@media (max-width: 769px) {
+    .projects__row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+}
 .projects__row-content-desc{
     text-align: left;
 }
@@ -333,7 +343,6 @@ a.btn--med:hover{
     padding-top: 50px;
     height: auto;
     background-color: #FAFAFA;
-    margin-bottom: 100px;
 }
 
  
@@ -358,13 +367,22 @@ a.btn--med:hover{
     gap: 10px;
     justify-content: center;
 }
+
 .card-body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+    transition: transform .3s;
+}
+.card-body:hover{
+    box-shadow: 3px 4px 10px 0 #7843E9;
+    transform: translateY(-5px)
+
 }
 .card-body p{
     text-align: center;
+    font-family: "General Sans  SemiBold";
 }
 
 
@@ -375,6 +393,7 @@ flex-wrap: wrap;
   
 } */
 h1.title{
+    font-family: "General Sans  SemiBold";
     display: flex;
     justify-content: center;
     text-align: center;
@@ -399,7 +418,7 @@ h1.title{
 }
 #section-4{
     padding: 0;
-    padding-top: 50px;
+    padding-top: 100px;
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -407,6 +426,7 @@ h1.title{
     background-image:url(./img/white-background-with-wavy-line/mhk_11.jpg)
 }
 .contact{
+    
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -457,7 +477,9 @@ h1.title{
     transform: translateY(-7px);
     
 }
- 
+ #row-5{
+    padding: 30px;
+ }
 .myskill{
     display: flex;
     flex-direction: column;
@@ -478,13 +500,13 @@ h1.title{
    
 }
 .contact-left p i{
-    color: #ff004f;
+    color: #262626;
     margin-right: 15px;
     font-size: 25px;
     transition: transform 0.6s;
 }
 .contact-left p i:hover{
-    color: #59ce22;
+    color:#7843E9;
     transform: translateY(-5px);
 }
 .social-icons{
@@ -499,12 +521,12 @@ h1.title{
     transition: transform 0.5s;
 }
 .social-icons a:hover{
-    color: #ff004f;
+    color: #7843E9;
     transform: translateY(-5px);
 }
 .btn{
     display: inline-block;
-    background: #ff004f;
+    background:#7843E9;
 }
 .contact-right form{
     width: 100%;
@@ -513,7 +535,7 @@ form input, form textarea{
     width: 100%;
     border: 0;
     outline: none;
-    background: #262626;
+    background: #fafafa;
     padding: 15px;
     margin: 15px 0;
     color: #fff;
@@ -522,8 +544,8 @@ form input, form textarea{
 
 }
 .button{
-    color: #ecd2da;
-    background: #c41b1b;
+    color: #fff;
+    background: #7843E9;
 }
 form .btn{
     padding: 14px 60px;
