@@ -5,12 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/mepic.jpg">
     <title>ANAS</title>
     <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.css">
     <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/css/general-sans.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="javascript.js"></script>
+    <!-- <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "To_1L9nVlJIrlAnGQ",
+      });
+   })();
+</script> -->
 </head>
 
 <body>
@@ -18,9 +30,10 @@
     <!-- Nav section -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-
+           <div>
+            <img src="./img/mepic.jpg" alt="pic">
+           </div>
             <div class="name">
-
                 <h4>ANAS</h4>
             </div>
 
@@ -181,7 +194,7 @@
                 <div class="projects__row-img-cont">
                     <img src="./img/dopefolio.jpeg" class="row-img">
                 </div>
-                <div class="projects_row-content">
+                <div class="projects__row-content">
                     <h3 class="projects__row-content-title">Dopefolio</h3>
                     <p class="projects__row-content-desc">
                         Dopefolio is a successful Open-Source project that I created
@@ -264,59 +277,44 @@
         </div>
     </div>
 
-    <div class="container-fluid" id="section-4">
-        <div class="contact">
-            <h1> CONTACT</h1>
-            <div class="line"></div>
-            <p>
-                Feel free to Contact me by submitting the form below<br>
-                and I will get back to you as soon as possible
-            </p>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-md-7">
-                    <h3>Get in touch</h3>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1"
-                            placeholder="Enter your name">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1"
-                            placeholder="Enter your name">
-
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Massage</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
-                    </div>
-                    <div class="btn" id="btn-a">Send</div>
+    
+<!-- contact section -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="bi bi-telephone"></i>7909109268</p>
+                <p><i class="bi bi-send"></i>ktmanas2020@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/muhammed-anas-b186a6244/"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://instagram.com/"> <i class="bi bi-instagram"></i></a>
+                    <a href="https://x.com/MuhammedAn9845"><i class="bi bi-twitter-x"></i></a>
+                     
+                    <a href=" https://github.com/kt-anas"> <i class="bi bi-github"></i></a>
+                
                 </div>
-                <div class="col-md-5">
-                    <h3>Contact me</h3>
-                    <div class="mt-5">
-                        <div class="d-flex">
-                            <i class="bi bi-geo-alt-fill"></i>
-                            <p>Address: 234 west street new </p>
-                        </div>
-                        <div class="d-flex">
-                            <i class="bi bi-telephone-fill"></i>
-                            <p>Contact :-8888888888</p>
-                        </div>
-                        <div class="d-flex">
-                            <i class="bi bi-envelope-fill"></i>
-                            <p>Email:- Contact@gmail.com</p>
-                        </div>
 
-                    </div>
-                </div>
+            </div>
+          
+            <div class="contact-right">
+                <form action="https://api.web3forms.com/submit" method="post">
+                    <input type="hidden" name="access_key" value="cc1a79e6-c30b-450f-9c0f-18424c49a2e8">
+                    <input type="text" id="text1" name="Name" placeholder="Your Name" required>
+                    <input type="email" id="email1" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" id="textarea" rows="6" placeholder="Your Message"></textarea>
+                    <input type="submit" value="submit" class="button" onclick="sendmail()" >
+                </form>
             </div>
         </div>
     </div>
+
+</div>
+
+    
+    
+
+    
     <script src="./bootstrap-5.3.3-dist/js/bootstrap.js"></script>
     <script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
     <script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>

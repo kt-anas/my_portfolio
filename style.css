@@ -42,7 +42,11 @@ nav.navbar{
    background-color: #fff;
    
 }
- 
+ [alt="pic"]{
+     width: 50px;
+     margin-left: 10px;
+     border-radius: 50%;
+ }
  ul#itom{
     display: flex;
     gap: 40px;
@@ -76,13 +80,14 @@ nav.navbar{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 40px;
+    padding-left: 20px;
     padding-right: 50px;
     cursor: pointer;
           
 }
-#name h4{
-    padding-top: 8px;
+.name h4{
+    
+    margin: 0px 0px 0px 0px;
 }
   
 #icon{
@@ -303,24 +308,32 @@ a.btn--med:hover{
     background: #7843E9;
     color: #fff;
 }
-.projects_row-content{
+.projects__row-content{
     padding: 2rem 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: flex-start;
+    padding-right: 200px;
+}
+.projects__row-content-desc{
+    text-align: left;
+}
+.projects__row-content-title{
+    margin-bottom: 40px;
 }
 .row-img{
     width: 100%;
     display: block;
     object-fit: cover;
+    padding: 30px;
 }
 #section-3{
      
     padding-top: 50px;
     height: auto;
     background-color: #FAFAFA;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
  
@@ -453,4 +466,68 @@ h1.title{
     text-align: center;
     margin-bottom: 50px;
 }
- 
+ /* contact section */
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p {
+    margin-top: 30px;
+   
+}
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+    transition: transform 0.6s;
+}
+.contact-left p i:hover{
+    color: #59ce22;
+    transform: translateY(-5px);
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+.btn{
+    display: inline-block;
+    background: #ff004f;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+
+}
+.button{
+    color: #ecd2da;
+    background: #c41b1b;
+}
+form .btn{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
